@@ -33,7 +33,7 @@ function App() {
 
   const handleSearch = async (event) => {
     event.preventDefault();
-    const response = await axios.get(`http://localhost:8080/search?q=${searchTerm}`);
+    const response = await axios.get(`https://art-search-server.onrender.com/search?q=${searchTerm}`);
     setSearchResults(response.data);
   };
 

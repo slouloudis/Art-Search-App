@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import './userSignUP.css'
 import splashDesktop from '../asset/sign_up_splash.png'
 
-axios.defaults.baseURL = 'http://localhost:8080';
+axios.defaults.baseURL = 'https://art-search-server.onrender.com/';
 
 const SignUpForm = ({ setLoggedIn }) => {
   const [email, setEmail] = useState('');
