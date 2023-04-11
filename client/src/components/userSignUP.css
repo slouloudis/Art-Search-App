@@ -1,0 +1,67 @@
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Mono:wght@100&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+form {margin: 0;}
+
+.txt--600 {
+    font-family: Caveat, monospace;
+    color: white;
+}
+
+
+  .page--container {
+    background: linear-gradient(180deg, #105A4A 0%, #3CE2B9 40.1%, #2BD8AD 100%), #2BD8AD;
+    background-attachment:fixed;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 13px;
+    grid-row-gap: 0px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  .splash--image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .page--container {
+      grid-template-columns: 1fr;
+    }
+  
+    .splash--image {
+      display: none;
+    }
+  
+    .form-container {
+      height: 100%;
+      grid-row: 1 / span 2;
+    }
+  }
+  

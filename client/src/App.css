@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Mono:wght@100&display=swap');
+
+body {
+    background: linear-gradient(180deg, #105A4A 0%, #3CE2B9 40.1%, #2BD8AD 100%), #2BD8AD;
+    background-attachment:fixed;
+}
+
+p {
+  font-family: monospace;
+  color: white;
+}

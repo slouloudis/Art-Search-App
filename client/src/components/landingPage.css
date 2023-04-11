@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Mono:wght@100&display=swap');
+
+body {
+  overflow: hidden;
+}
+
+.lp--parent--container {
+  /* position: relative; */
+}
+
+.lp--splash--img {
+  overflow: hidden;
+  max-width: 100%;
+  left: 0vh;
+  width: 100vh;
+  height: auto;
+  position: absolute;
+  top: 5vh;
+  z-index: -99;
+}
+
+/* ---- For over 600px */
+@media only screen and (min-width: 600px) {
+  .lp--splash--img {
+    width: 90%;
+    height: auto;
+  }
+}
+/* --------------------------------------------------------------------------------- */
+.lp--header--title {
+  font-family: 'Caveat', cursive;
+  color: white;
+  position: absolute;
+  width: 324.94px;
+  height: 111.22px;
+  left: 48px;
+  top: -22.99px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 164px;
+  line-height: 105px;
+  letter-spacing: 0.235em;
+
+  color: #FFFFFF;
+
+  text-shadow: 17px 12px 1px rgba(0, 0, 0, 0.38);
+  transform: rotate(-4.06deg);
+}
+
+.lp--p--subtitle {
+  position: absolute;
+  top: 33%;
+  left: 15%;
+
+}
+/* -----------------------------------BUTTONS---------------------------------------------- */
+
+.lp--buttons {
+  left: 70%;
+  bottom: 50%;
+  z-index: 500;
+  position: absolute;
+}
