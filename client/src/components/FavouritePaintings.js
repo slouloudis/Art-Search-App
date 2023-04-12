@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './FavouritePaintings.css'
 
 const FavoritePaintings = ({ favoritePaintings, removeFavorite }) => {
@@ -15,6 +16,9 @@ const FavoritePaintings = ({ favoritePaintings, removeFavorite }) => {
   return (
     <div>
       <h2>Favorite Paintings</h2>
+      <Link to="/search">
+        <button>Back to Search</button>
+      </Link>
       {displayedFavorites.length > 0 ? (
         <ul>
           {displayedFavorites.map((painting) => (
@@ -27,7 +31,7 @@ const FavoritePaintings = ({ favoritePaintings, removeFavorite }) => {
           ))}
         </ul>
       ) : (
-        <p>No favorite paintings 	(҂◡_◡) ᕤ</p>
+        <p>No favorite paintings (҂◡_◡) ᕤ</p>
       )}
     </div>
   );
