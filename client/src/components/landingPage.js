@@ -10,7 +10,6 @@ export class landingPage extends Component {
       <div>
         <h1 className="lp--header--title">Ja, Nee</h1>
           <p className="lp--p--subtitle">Art Board</p>
-          <p>WOW! Welcome to my website</p>
         <div className="lp--parent--container">
           <img className="lp--splash--img"
             src={splashMobile}
